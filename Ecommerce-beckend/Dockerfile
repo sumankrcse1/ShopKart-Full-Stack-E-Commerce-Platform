@@ -21,8 +21,14 @@ FROM eclipse-temurin:21-jre
 
 WORKDIR /app
 
-COPY --from=builder /app/target/shopkart-backend.jar app.jar
+# Copy the JAR file (using wildcard to handle any JAR name)
+COPY --from=builder /app/target/*.jar app.jar
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "app.jar"]
+# Use environment variables for configuration
+# Render provides PORT environment variable automatically
+CMD ["java", \
+     "-Dserver.port=${PORT:-8080}", \
+     "-Dspring.profiles.active=${SPRING_PROFILES_ACTIVE:-prod}", \
+     "-jar", "app.jar"]
