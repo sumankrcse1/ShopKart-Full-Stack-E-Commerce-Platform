@@ -1,0 +1,45 @@
+############################
+# OS
+############################
+.DS_Store
+.localized
+Thumbs.db
+
+############################
+# IDEs
+############################
+.idea/
+.vscode/
+*.iml
+
+############################
+# Maven / Java
+############################
+target/
+*.log
+
+############################
+# Spring Boot secrets
+############################
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.yml
+
+############################
+# Environment files
+############################
+.env
+.env.*
+
+############################
+# Security / Keys
+############################
+*.pem
+*.key
+*.jks
+*.p12
+
+############################
+# Misc
+############################
+node_modules/

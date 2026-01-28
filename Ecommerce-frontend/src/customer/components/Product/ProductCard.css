@@ -1,0 +1,24 @@
+/* removes the inline gap under images and ensures images are block-level */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* defensive: ensure focus ring doesn't add a layout border */
+.product-card, .productCard {
+  overflow: hidden;            /* crucial */
+  border-radius: 0.75rem;      /* same as Tailwind rounded-2xl */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* image smoothing fix for scaled images */
+.product-card img, .productCard img {
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
