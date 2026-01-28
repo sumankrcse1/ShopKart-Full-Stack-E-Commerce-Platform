@@ -107,7 +107,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>ShopKart-backend</finalName>
+		<finalName>shopkart-backend</finalName>
 
 		<plugins>
 			<plugin>
