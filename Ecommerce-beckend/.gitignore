@@ -18,12 +18,6 @@ Thumbs.db
 target/
 *.log
 
-############################
-# Spring Boot secrets
-############################
-src/main/resources/application.properties
-src/main/resources/application.yml
-src/main/resources/application-*.yml
 
 ############################
 # Environment files
