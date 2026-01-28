@@ -28,7 +28,4 @@ EXPOSE 8080
 
 # Use environment variables for configuration
 # Render provides PORT environment variable automatically
-CMD ["java", \
-     "-Dserver.port=${PORT:-8080}", \
-     "-Dspring.profiles.active=${SPRING_PROFILES_ACTIVE:-prod}", \
-     "-jar", "app.jar"]
+CMD ["java", "-Dserver.port=${PORT:-8080}", "-jar", "app.jar"]
