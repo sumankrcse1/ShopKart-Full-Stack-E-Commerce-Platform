@@ -18,6 +18,8 @@
 - [Future Enhancements](#future-enhancements)
 
 ---
+<img width="1470" height="956" alt="shopkart-homepage" src="https://github.com/user-attachments/assets/48953907-3862-419e-beb9-a14cea6a514e" />
+
 
 <img width="1470" height="923" alt="Screenshot 2026-01-28 at 8 24 42 PM" src="https://github.com/user-attachments/assets/0e4878ba-ae48-4662-885a-dae78df707d8" />
 
